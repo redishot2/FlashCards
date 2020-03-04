@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		3F723070240F4A3B0042696D /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72306F240F4A3B0042696D /* FlashCardView.swift */; };
 		3F723072240F4DCF0042696D /* FlashCardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F723071240F4DCF0042696D /* FlashCardBackground.swift */; };
-		3F723074240F506F0042696D /* StyleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F723073240F506F0042696D /* StyleDelegate.swift */; };
+		3F723076240F58CC0042696D /* FlashCardBackgroundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F723075240F58CC0042696D /* FlashCardBackgroundDataSource.swift */; };
+		3F723078240F5A7C0042696D /* FlashCardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F723077240F5A7C0042696D /* FlashCardDataSource.swift */; };
 		3F7E4F04240EF19800D28443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E4F03240EF19800D28443 /* AppDelegate.swift */; };
 		3F7E4F06240EF19800D28443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E4F05240EF19800D28443 /* SceneDelegate.swift */; };
 		3F7E4F08240EF19800D28443 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E4F07240EF19800D28443 /* ContentView.swift */; };
@@ -56,7 +57,8 @@
 /* Begin PBXFileReference section */
 		3F72306F240F4A3B0042696D /* FlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
 		3F723071240F4DCF0042696D /* FlashCardBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardBackground.swift; sourceTree = "<group>"; };
-		3F723073240F506F0042696D /* StyleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleDelegate.swift; sourceTree = "<group>"; };
+		3F723075240F58CC0042696D /* FlashCardBackgroundDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardBackgroundDataSource.swift; sourceTree = "<group>"; };
+		3F723077240F5A7C0042696D /* FlashCardDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardDataSource.swift; sourceTree = "<group>"; };
 		3F7E4F00240EF19800D28443 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7E4F03240EF19800D28443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7E4F05240EF19800D28443 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,8 +157,9 @@
 			children = (
 				3F7E4F4F240EF48700D28443 /* FlashCards.h */,
 				3F72306F240F4A3B0042696D /* FlashCardView.swift */,
+				3F723077240F5A7C0042696D /* FlashCardDataSource.swift */,
 				3F723071240F4DCF0042696D /* FlashCardBackground.swift */,
-				3F723073240F506F0042696D /* StyleDelegate.swift */,
+				3F723075240F58CC0042696D /* FlashCardBackgroundDataSource.swift */,
 				3F7E4F50240EF48700D28443 /* Info.plist */,
 			);
 			path = FlashCards;
@@ -324,8 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F723078240F5A7C0042696D /* FlashCardDataSource.swift in Sources */,
 				3F723072240F4DCF0042696D /* FlashCardBackground.swift in Sources */,
-				3F723074240F506F0042696D /* StyleDelegate.swift in Sources */,
+				3F723076240F58CC0042696D /* FlashCardBackgroundDataSource.swift in Sources */,
 				3F723070240F4A3B0042696D /* FlashCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

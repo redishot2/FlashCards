@@ -10,13 +10,24 @@ import FlashCards
 import SwiftUI
 
 struct ContentView: View {
+    
+    private let dataSource: FlashCardDataSource
+    
     var body: some View {
-        FlashCardView()
+        FlashCardView(dataSource: dataSource)
+    }
+    
+    public init(dataSource: FlashCardDataSource) {
+        self.dataSource = dataSource
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+        let backgroundDataSource = FlashCardBackgroundDataSource(width: 200, height: 200, backgroundColor: .pink)
+        let dataSource = FlashCardDataSource(backgroundDataSource: backgroundDataSource)
+        
+        return ContentView(dataSource: dataSource)
     }
 }

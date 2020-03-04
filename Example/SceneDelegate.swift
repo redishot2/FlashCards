@@ -6,8 +6,9 @@
 //  Copyright © 2020 Martinez, Natasha E. All rights reserved.
 //
 
-import UIKit
+import FlashCards
 import SwiftUI
+import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,7 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        
+        let backgroundDataSource = FlashCardBackgroundDataSource(width: 200, height: 200, backgroundColor: .pink)
+        let dataSource = FlashCardDataSource(backgroundDataSource: backgroundDataSource)
+        
+        let contentView = ContentView(dataSource: dataSource)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
