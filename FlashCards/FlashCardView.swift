@@ -13,10 +13,10 @@ public struct FlashCardView: View {
     private let dataSource: FlashCardDataSource
     
     public var body: some View {
-        VStack {
-            Text("Flashcard")
-                .foregroundColor(Color.white)
+        ZStack {
             FlashCardBackground(dataSource: dataSource.backgroundDataSource)
+            Text(dataSource.textDataSource.promptText)
+                .foregroundColor(Color.white)
         }
     }
     
@@ -29,7 +29,8 @@ struct FlashCardView_Previews: PreviewProvider {
     static var previews: some View {
         
         let backgroundDataSource = FlashCardBackgroundDataSource(width: 200, height: 200, backgroundColor: .pink)
-        let dataSource = FlashCardDataSource(backgroundDataSource: backgroundDataSource)
+        let textDataSource = FlashCardTextDataSource(promptText: "Title", detailText: "This is the answer")
+        let dataSource = FlashCardDataSource(backgroundDataSource: backgroundDataSource, textDataSource: textDataSource)
         
         return FlashCardView(dataSource: dataSource)
     }

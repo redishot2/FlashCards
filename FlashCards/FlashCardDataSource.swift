@@ -11,8 +11,10 @@ import Foundation
 public class FlashCardDataSource {
     
     internal let backgroundDataSource: FlashCardBackgroundDataSource
+    internal let textDataSource: FlashCardTextDataSource
     
-    public init(backgroundDataSource: FlashCardBackgroundDataSource) {
+    public init(backgroundDataSource: FlashCardBackgroundDataSource, textDataSource: FlashCardTextDataSource) {
         self.backgroundDataSource = backgroundDataSource
+        self.textDataSource = textDataSource
     }
 }

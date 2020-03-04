@@ -22,7 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
         
         let backgroundDataSource = FlashCardBackgroundDataSource(width: 200, height: 200, backgroundColor: .pink)
-        let dataSource = FlashCardDataSource(backgroundDataSource: backgroundDataSource)
+        let textDataSource = FlashCardTextDataSource(promptText: "Title", detailText: "This is the answer")
+        let dataSource = FlashCardDataSource(backgroundDataSource: backgroundDataSource, textDataSource: textDataSource)
         
         let contentView = ContentView(dataSource: dataSource)
 
