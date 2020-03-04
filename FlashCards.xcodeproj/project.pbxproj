@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F723070240F4A3B0042696D /* FlashCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72306F240F4A3B0042696D /* FlashCardView.swift */; };
 		3F7E4F04240EF19800D28443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E4F03240EF19800D28443 /* AppDelegate.swift */; };
 		3F7E4F06240EF19800D28443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E4F05240EF19800D28443 /* SceneDelegate.swift */; };
 		3F7E4F08240EF19800D28443 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E4F07240EF19800D28443 /* ContentView.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F72306F240F4A3B0042696D /* FlashCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashCardView.swift; sourceTree = "<group>"; };
 		3F7E4F00240EF19800D28443 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7E4F03240EF19800D28443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7E4F05240EF19800D28443 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				3F7E4F4F240EF48700D28443 /* FlashCards.h */,
+				3F72306F240F4A3B0042696D /* FlashCardView.swift */,
 				3F7E4F50240EF48700D28443 /* Info.plist */,
 			);
 			path = FlashCards;
@@ -241,6 +244,7 @@
 					};
 					3F7E4F4C240EF48700D28443 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -314,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F723070240F4A3B0042696D /* FlashCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +466,7 @@
 		3F7E4F20240EF19A00D28443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
@@ -481,6 +487,7 @@
 		3F7E4F21240EF19A00D28443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Example/Preview Content\"";
@@ -545,6 +552,7 @@
 		3F7E4F57240EF48700D28443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -562,6 +570,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.natashamartinez.FlashCards;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -572,6 +581,7 @@
 		3F7E4F58240EF48700D28443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

@@ -6,11 +6,12 @@
 //  Copyright © 2020 Martinez, Natasha E. All rights reserved.
 //
 
+import FlashCards
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        FlashCardView()
     }
 }
 
