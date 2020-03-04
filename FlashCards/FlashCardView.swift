@@ -13,7 +13,11 @@ public struct FlashCardView: View {
     public init() {}
     
     public var body: some View {
-        Text("Flashcard")
+        VStack {
+            Text("Flashcard")
+                .foregroundColor(Color.white)
+            FlashCardBackground(width: 200, height: 200)
+        }
     }
 }
 
